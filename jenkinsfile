@@ -1,1 +1,18 @@
 
+node{
+
+        stage("Checkout") {
+           
+                git branch 'Master , url: 'https://github.com/zbat-omar/angular.git'
+           
+        }
+
+        stage("Install node modules ") {
+           sh "npm install"
+        }
+
+        stage("Build") {
+           sh "npm run build --prod"
+        }
+
+        }
