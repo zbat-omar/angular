@@ -11,4 +11,6 @@ node{
         bat 'npm install' } 
         stage("Build") 
         { bat 'npm run build --prod' }
+        stage("Build") 
+        { bat 'ng serve' }
         }
