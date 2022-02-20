@@ -8,8 +8,7 @@ node{
         }
 
        stage("Install node modules ") {
-        
-        sh 'node_modules/.bin/ng serve'
-        }
-
+        sh 'npm install' } 
+        stage("Build") 
+        { sh 'npm run build --prod' }
         }
