@@ -3,7 +3,7 @@ node{
 
         stage("Checkout") {
            
-                git branch 'Master', url: 'https://github.com/zbat-omar/angular.git'
+                git branch: 'Master', url: 'https://github.com/zbat-omar/angular.git'
            
         }
 
